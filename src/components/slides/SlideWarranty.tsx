@@ -3,7 +3,7 @@ import { Shield, Wrench, Image, CheckCircle2 } from "lucide-react";
 
 const SlideWarranty = () => {
   const clientNeeds = [
-    "Logo y paleta de colores",
+    "Logo y paleta de colores y material audiovisual",
     "Información médica: especialidades, exámenes, contacto",
     "Validación de textos y estructura",
   ];
