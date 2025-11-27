@@ -151,7 +151,7 @@
       transition-duration: 0.01ms !important;
     }
   }
-  
+
   @media (prefers-reduced-transparency: reduce) {
     .glass-surface {
       background: hsl(var(--surface));
@@ -159,15 +159,34 @@
       -webkit-backdrop-filter: none;
     }
   }
-  
+
   /* Hide Scrollbar but Keep Functionality */
   .hide-scrollbar {
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
-  
+
   .hide-scrollbar::-webkit-scrollbar {
     display: none;
+  }
+
+  /* Smooth Scroll Optimization */
+  .snap-x {
+    scroll-snap-type: x mandatory;
+  }
+
+  .snap-start {
+    scroll-snap-align: start;
+  }
+
+  .snap-always {
+    scroll-snap-stop: always;
+  }
+
+  /* Hardware Acceleration */
+  .hw-accelerate {
+    transform: translateZ(0);
+    will-change: transform;
   }
 }
 
