@@ -5,7 +5,6 @@ import SwipeIndicator from "@/components/SwipeIndicator";
 import SlideCover from "@/components/slides/SlideCover";
 import SlideDiagnosis from "@/components/slides/SlideDiagnosis";
 import SlideObjectives from "@/components/slides/SlideObjectives";
-import SlideWebsite from "@/components/slides/SlideWebsite";
 import SlideExclusions from "@/components/slides/SlideExclusions";
 import SlideWarranty from "@/components/slides/SlideWarranty";
 import SlideTimeline from "@/components/slides/SlideTimeline";
@@ -16,13 +15,12 @@ const Index = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const carouselRef = useRef<HTMLDivElement>(null);
   const slideRefs = useRef<(HTMLDivElement | null)[]>([]);
-  const totalSlides = 8;
+  const totalSlides = 7;
 
   const slides = [
     <SlideCover key="cover" />,
     <SlideDiagnosis key="diagnosis" />,
     <SlideObjectives key="objectives" />,
-    <SlideWebsite key="website" />,
     <SlideExclusions key="exclusions" />,
     <SlidePricing key="pricing" />,
     <SlideTimeline key="timeline" />,
