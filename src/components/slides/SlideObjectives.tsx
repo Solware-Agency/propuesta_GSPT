@@ -1,58 +1,82 @@
 import Card from "../Card";
-import { Target, Package, Mail, Search, Palette, Network } from "lucide-react";
+import { Home, MapPin, Stethoscope, FlaskConical } from "lucide-react";
 
 const SlideObjectives = () => {
-  const objectives = [
+  const sections = [
     {
-      icon: Target,
-      text: "Diseñar una página web profesional y responsive (adaptada a móviles) que proyecte confianza, solidez y trayectoria en el sector.",
+      icon: Home,
+      title: "Página de Inicio",
+      items: [
+        "Bienvenida clara y profesional",
+        "Servicios principales",
+        "Enlace directo a WhatsApp o llamada",
+        "Sección de testimonios, equipo o beneficios",
+        "Diseño visual alineado con identidad médica",
+      ],
     },
     {
-      icon: Package,
-      text: "Crear sección de catálogo digital para presentar productos, equipos y materiales descartables dirigidos a instituciones médicas y laboratorios.",
+      icon: MapPin,
+      title: "Ubicaciones y Sedes",
+      items: [
+        "Mapa interactivo",
+        "Horarios y contactos por sede",
+        "Enlaces directos a Google Maps o WhatsApp",
+      ],
     },
     {
-      icon: Mail,
-      text: "Implementar formulario de contacto comercial para facilitar consultas de instituciones médicas, laboratorios y centros de investigación.",
+      icon: Stethoscope,
+      title: "Especialidades Médicas",
+      items: [
+        "Directorio organizado con detalle de cada especialidad",
+        "Posibilidad de ampliar según el crecimiento de la clínica",
+      ],
     },
     {
-      icon: Search,
-      text: "Optimización SEO básica enfocada en búsquedas B2B del sector salud para mejorar visibilidad en buscadores.",
-    },
-    {
-      icon: Palette,
-      text: "Diseño profesional alineado con el Manual de Identidad Corporativa de BioSupplies, comunicando integridad, excelencia y compromiso.",
-    },
-    {
-      icon: Network,
-      text: "Plataforma escalable con posibilidad de integración futura de sistema de pedidos online y área de aliados comerciales."
+      icon: FlaskConical,
+      title: "Exámenes y Procedimientos",
+      items: [
+        "Lista clara con categorías (laboratorio, imagenología, etc.)",
+        "Indicaciones o preparaciones si aplica",
+      ],
     },
   ];
 
   return (
     <div className="min-h-screen flex items-center justify-center p-4 sm:p-6 lg:p-8">
       <div className="max-w-4xl w-full space-y-8">
-        <h2 className="text-center text-foreground mb-8">Nuestra Propuesta</h2>
+        <h2 className="text-center text-foreground mb-8">¿Qué incluye el proyecto?</h2>
 
-        <Card variant="glass" className="space-y-6">
-          {objectives.map((objective, index) => {
-            const Icon = objective.icon;
+        <p className="text-center text-foreground/70 mb-6">
+          Una página web profesional enfocada en atraer, informar y facilitar el contacto de pacientes.
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {sections.map((section, index) => {
+            const Icon = section.icon;
             return (
-              <div key={index} className="flex gap-4 items-start">
-                <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-primary/20 flex items-center justify-center">
-                  <Icon className="w-5 h-5 sm:w-6 sm:h-6 text-primary" aria-hidden="true" />
+              <Card key={index} variant="neuo" className="space-y-4">
+                <div className="flex items-center gap-3">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center">
+                    <Icon className="w-5 h-5 text-primary" aria-hidden="true" />
+                  </div>
+                  <h3 className="text-primary font-semibold">{section.title}</h3>
                 </div>
-                <p className="text-foreground/80 text-sm sm:text-base leading-relaxed pt-2 text-justify">
-                  {objective.text}
-                </p>
-              </div>
+                <ul className="space-y-2 text-sm text-foreground/80">
+                  {section.items.map((item, idx) => (
+                    <li key={idx} className="flex items-start gap-2">
+                      <span className="text-primary mt-1 text-xs">•</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </Card>
             );
           })}
-        </Card>
+        </div>
 
         {/* Copyright */}
         <p className="text-center text-xs text-foreground/40 mt-8">
-          © 2025 Solware
+          © 2025 Solware Agency
         </p>
       </div>
     </div>

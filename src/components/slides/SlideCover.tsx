@@ -7,24 +7,24 @@ const SlideCover = () => {
 
         {/* Title */}
         <h1 className="text-foreground">
-          Web para BIOSUPPLIES
+          Propuesta de Desarrollo Web
         </h1>
 
         {/* Subtitle */}
         <p className="text-xl sm:text-2xl text-primary font-semibold">
-          Propuesta presentada por Solware
+          Centro Médico
         </p>
 
-        {/* Description */}
-        <p className="text-foreground/80 max-w-2xl mx-auto leading-relaxed text-justify">
-          Empresa venezolana de distribución de productos, equipos y materiales para patología
-          y diagnóstico biomédico. Una propuesta para establecer una presencia digital profesional
-          que fortalezca la confianza, mejore la visibilidad y facilite el contacto comercial.
-        </p>
+        {/* Metadata */}
+        <div className="space-y-2 text-foreground/70">
+          <p><span className="font-semibold">Fecha:</span> 27 / 11 / 2025</p>
+          <p><span className="font-semibold">Proveedor:</span> Solware Agency</p>
+          <p><span className="font-semibold">Cliente:</span> Salud para todos</p>
+        </div>
 
         {/* Copyright */}
         <p className="text-center text-xs text-foreground/40 mt-8">
-          © 2025 Solware
+          © 2025 Solware Agency
         </p>
       </Card>
     </div>

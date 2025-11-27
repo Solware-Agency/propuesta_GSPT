@@ -3,27 +3,19 @@ import Card from "../Card";
 const SlideTimeline = () => {
   const phases = [
     {
-      week: "Día 1-2",
-      title: "Kickoff y Levantamiento de Contenido",
-      activities:
-        "Reunión inicial, recopilación de requisitos, definición de servicios y especialidades a destacar.",
+      week: "Semana 1",
+      title: "Diseño inicial y estructura",
+      activities: "Definición del diseño visual, estructura de páginas y arquitectura del sitio.",
     },
     {
-      week: "Día 3-6",
-      title: "Diseño del Layout Visual",
-      activities:
-        "Diseño de la estructura visual, paleta de colores, tipografías y validación con el cliente.",
+      week: "Semana 2",
+      title: "Ajustes, textos e imágenes",
+      activities: "Integración de contenido, revisión de textos y ajustes visuales.",
     },
     {
-      week: "Día 7-12",
-      title: "Desarrollo y Pruebas",
-      activities:
-        "Construcción de las páginas, integración de formularios, optimización SEO y pruebas de funcionamiento.",
-    },
-    {
-      week: "Día 13-14",
-      title: "Revisión Final y Publicación",
-      activities: "Ajustes finales según feedback del cliente, optimización final y publicación del sitio web.",
+      week: "Semana 3",
+      title: "Optimización y publicación",
+      activities: "Pruebas finales, optimización de rendimiento y lanzamiento.",
     },
   ];
 
@@ -31,8 +23,12 @@ const SlideTimeline = () => {
     <div className="min-h-screen flex items-center justify-center p-4 sm:p-6 lg:p-8">
       <div className="max-w-4xl w-full space-y-8">
         <h2 className="text-center text-foreground mb-8">
-          Timeline de Desarrollo (2 semanas hábiles)
+          Tiempos de entrega
         </h2>
+
+        <p className="text-center text-foreground/70 mb-6 italic">
+          Dependemos de la entrega de contenido por parte del cliente para cumplir este cronograma.
+        </p>
 
         <div className="space-y-4">
           {phases.map((phase, index) => (
@@ -52,7 +48,7 @@ const SlideTimeline = () => {
 
         {/* Copyright */}
         <p className="text-center text-xs text-foreground/40 mt-8">
-          © 2025 Solware
+          © 2025 Solware Agency
         </p>
       </div>
     </div>

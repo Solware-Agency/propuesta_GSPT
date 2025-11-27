@@ -6,7 +6,8 @@ import SlideCover from "@/components/slides/SlideCover";
 import SlideDiagnosis from "@/components/slides/SlideDiagnosis";
 import SlideObjectives from "@/components/slides/SlideObjectives";
 import SlideWebsite from "@/components/slides/SlideWebsite";
-import SlideImpact from "@/components/slides/SlideImpact";
+import SlideExclusions from "@/components/slides/SlideExclusions";
+import SlideWarranty from "@/components/slides/SlideWarranty";
 import SlideTimeline from "@/components/slides/SlideTimeline";
 import SlidePricing from "@/components/slides/SlidePricing";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -15,16 +16,17 @@ const Index = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const carouselRef = useRef<HTMLDivElement>(null);
   const slideRefs = useRef<(HTMLDivElement | null)[]>([]);
-  const totalSlides = 7;
+  const totalSlides = 8;
 
   const slides = [
     <SlideCover key="cover" />,
     <SlideDiagnosis key="diagnosis" />,
     <SlideObjectives key="objectives" />,
     <SlideWebsite key="website" />,
-    <SlideImpact key="impact" />,
-    <SlideTimeline key="timeline" />,
+    <SlideExclusions key="exclusions" />,
     <SlidePricing key="pricing" />,
+    <SlideTimeline key="timeline" />,
+    <SlideWarranty key="warranty" />,
   ];
 
   const scrollToSlide = (index: number) => {
