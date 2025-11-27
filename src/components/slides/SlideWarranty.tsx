@@ -5,7 +5,6 @@ const SlideWarranty = () => {
   const clientNeeds = [
     "Logo y paleta de colores",
     "Información médica: especialidades, exámenes, contacto",
-    "Fotos (si desea personalizar)",
     "Validación de textos y estructura",
   ];
 
@@ -23,10 +22,6 @@ const SlideWarranty = () => {
               <h3 className="text-primary font-semibold text-lg">Garantía</h3>
             </div>
             <ul className="space-y-3 text-foreground/80">
-              <li className="flex items-start gap-2">
-                <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                <span>15 días de soporte técnico post-lanzamiento</span>
-              </li>
               <li className="flex items-start gap-2">
                 <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                 <span>Cambios menores incluidos</span>
