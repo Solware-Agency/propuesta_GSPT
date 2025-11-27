@@ -10,17 +10,12 @@ const SlideCover = () => {
           Propuesta de Desarrollo Web
         </h1>
 
-        {/* Subtitle */}
-        <p className="text-xl sm:text-2xl text-primary font-semibold">
-          Centro Médico
-        </p>
-
         {/* Agency Link */}
         <a
           href="https://www.solware.agency"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block text-foreground/70 hover:text-primary transition-colors duration-200 underline decoration-primary/30 hover:decoration-primary"
+          className="inline-block text-xl sm:text-2xl text-primary font-semibold hover:text-primary/80 transition-colors duration-200 underline decoration-primary/30 hover:decoration-primary"
         >
           Solware Agency
         </a>
