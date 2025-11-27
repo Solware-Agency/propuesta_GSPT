@@ -15,17 +15,15 @@ const SlideCover = () => {
           Centro Médico
         </p>
 
-        {/* Metadata */}
-        <div className="space-y-2 text-foreground/70">
-          <p><span className="font-semibold">Fecha:</span> 27 / 11 / 2025</p>
-          <p><span className="font-semibold">Proveedor:</span> Solware Agency</p>
-          <p><span className="font-semibold">Cliente:</span> Salud para todos</p>
-        </div>
-
-        {/* Copyright */}
-        <p className="text-center text-xs text-foreground/40 mt-8">
-          © 2025 Solware Agency
-        </p>
+        {/* Agency Link */}
+        <a
+          href="https://www.solware.agency"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block text-foreground/70 hover:text-primary transition-colors duration-200 underline decoration-primary/30 hover:decoration-primary"
+        >
+          Solware Agency
+        </a>
       </Card>
     </div>
   );
