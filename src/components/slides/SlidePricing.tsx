@@ -28,12 +28,16 @@ const SlidePricing = () => {
                 <h3 className="text-primary font-semibold text-lg">Forma de Pago</h3>
                 <ul className="space-y-2 text-foreground/80">
                   <li className="flex items-start gap-2">
-                    <span className="text-primary font-semibold mt-1">60%</span>
-                    <span>al iniciar: <span className="font-semibold">450 €</span></span>
+                    <span className="text-primary font-semibold mt-1">40%</span>
+                    <span>al iniciar el proyecto: <span className="font-semibold">300 €</span></span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-primary font-semibold mt-1">40%</span>
-                    <span>al entregar: <span className="font-semibold">300 €</span></span>
+                    <span className="text-primary font-semibold mt-1">30%</span>
+                    <span>período de correcciones: <span className="font-semibold">225 €</span></span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary font-semibold mt-1">30%</span>
+                    <span>al terminar el proyecto: <span className="font-semibold">225 €</span></span>
                   </li>
                 </ul>
                 <p className="text-sm text-foreground/60 italic mt-4">
